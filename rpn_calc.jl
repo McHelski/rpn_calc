@@ -66,12 +66,10 @@ function main(args)
         try
             my_expr = split(args[begin], " ")
             println(calc_rpn(my_expr))
-        catch e
+        catch
             println("ERROR: Invalid arguments.")
         end
     end
-
-    exit()
 end
 
 main(ARGS)
