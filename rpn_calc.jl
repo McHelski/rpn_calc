@@ -43,7 +43,8 @@ OUTPUT: 40.0
 
 """
 
-function calc_rpn(num_op_arr)
+function calc_rpn(my_expr::String)
+    num_op_arr = split(my_expr, " ")
     my_stack = Float64[]
 
     for i ∈ num_op_arr
@@ -64,7 +65,7 @@ function main(args)
         print(manual)
     else
         try
-            my_expr = split(args[begin], " ")
+            my_expr = args[begin]
             println(calc_rpn(my_expr))
         catch
             println("ERROR: Invalid arguments.")
