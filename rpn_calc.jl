@@ -13,7 +13,7 @@ manual =
 HOW TO USE
 ~~~~~~~~~~
 
-1. Type the name of this program followed by a RPN expression enclosed in double quotes.
+1. Type the name of this program followed by an RPN expression enclosed in double quotes.
 2. Press <Enter>.
 3. Numerical value of that expression will be printed to the console.
 
